@@ -1,7 +1,7 @@
 import csv
+from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from collections import defaultdict
 
 BASE_DIR = Path(__file__).parents[1]
 DATETIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
