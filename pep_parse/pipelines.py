@@ -9,6 +9,7 @@ FILE_NAME = 'status_summary_{time}.csv'
 
 
 class PepParsePipeline:
+
     def open_spider(self, spider):
         self.status_count = defaultdict(int)
         self.status_dir = BASE_DIR / 'results'

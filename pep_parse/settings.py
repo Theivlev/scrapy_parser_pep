@@ -3,6 +3,10 @@ BOT_NAME = 'pep_parse'
 SPIDER_MODULES = ['pep_parse.spiders']
 NEWSPIDER_MODULE = 'pep_parse.spiders'
 
+NAME = 'pep'
+ALLOWED_DOMAINS = ['peps.python.org']
+START_URLS = ['https://peps.python.org/']
+
 
 FEEDS = {
     'results/pep_%(time)s.csv': {
